@@ -228,7 +228,6 @@ public class BossEnemy {
 			//loading the health before it starts to move
 			if(!startMoving){
 				health+=deltaTime*40;
-				System.out.println(health);
 			if(health >= 200)
 				health = 200;
 			}
@@ -263,7 +262,6 @@ public class BossEnemy {
 			}
 			if (changeVel){
 			newYpositionMin = MainGame.HEIGHT - (rand.nextInt((600) - 300) + 300);
-			System.out.println("Position Changed! MIN AND MAX:" + newYpositionMin + "|" + YpositionMax);
 			}
 
 			//bounds for the random y

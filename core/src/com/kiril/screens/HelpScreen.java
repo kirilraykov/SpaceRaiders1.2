@@ -126,11 +126,9 @@ public class HelpScreen implements Screen {
 
 	public void buttonClickTimer(float delta){
 		if(startButtonClickTimer){
-			//System.out.println("TIMER STARTED");
 			buttonClickTime += delta;
 			
 			if(buttonClickTime >= buttonClickTimer){
-				//System.out.println("CAN CLICK");
 				buttonClickTime = 0;
 				startButtonClickTimer = false;
 				canClick = true;
@@ -182,7 +180,6 @@ public class HelpScreen implements Screen {
 					if(sfx)
 					confirmButton.play(0.6f);
 					game.setScreen(new OptionsMenu(game, handler, true));
-					System.out.println("OPTIONS");
 				}
 			}else
 				game.batch.draw(optionsButtonInactive, 30, 210);

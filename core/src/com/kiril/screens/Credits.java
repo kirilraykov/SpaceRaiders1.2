@@ -159,6 +159,7 @@ public class Credits implements Screen{
 	public void dispose() {
 		background.dispose();
 		confirmButton.dispose();
+		System.out.println("Credits Screen Disposed.");
 	}
 
 }

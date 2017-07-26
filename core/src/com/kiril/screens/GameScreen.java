@@ -322,7 +322,6 @@ public class GameScreen implements Screen{
 		replay = prefs.getBoolean("replay", true);
 		progressBar = prefs.getBoolean("progressBar", true);
 		highscore = prefs.getInteger("highscore");
-		System.out.println("Highscore: "+highscore);
 		
 		//player texture region and animation
 		TextureRegion[][] rollSpriteSheet = TextureRegion.split(new Texture("player2.png"), SHIP_WIDTH, SHIP_HEIGHT);
@@ -1446,7 +1445,6 @@ public class GameScreen implements Screen{
 							//check if the boss is half HP so a triple bullets spawn
 							if((int)bossEnemy.getHealth() == 95){
 								lg.setHalfLevelPassed(true);
-								System.out.println("HALF LEVEL");
 							}
 							
 							//check every 50HP you take from the boss so tools are spawned
@@ -1467,7 +1465,6 @@ public class GameScreen implements Screen{
 					score+=4000;
 					
 					lg.setFirstBossKilled(true);
-					System.out.println("BOSS KILLED");
 					//20 coins
 					if(coinsTotal < 21)
 					for(int i = 0; i < 20; i++){
@@ -1523,7 +1520,6 @@ public class GameScreen implements Screen{
 				--lives;
 				if(score > 100)
 				score /= 2;
-				System.out.println("LIVES: " + lives);
 				explosions.add(new Explosion(x, y, "playerExplosion"));
 			}
 		}
@@ -1539,7 +1535,6 @@ public class GameScreen implements Screen{
 				--lives;
 				if(score > 100)
 				score /= 2;
-				System.out.println("LIVES: " + lives);
 				explosions.add(new Explosion(x, y, "playerExplosion"));
 			}
 		}
@@ -1555,7 +1550,6 @@ public class GameScreen implements Screen{
 				--lives;
 				if(score > 100)
 				score /= 2;
-				System.out.println("LIVES: " + lives);
 				explosions.add(new Explosion(x, y, "playerExplosion"));
 			}
 		}
@@ -1570,7 +1564,6 @@ public class GameScreen implements Screen{
 				--lives;
 				if(score > 100)
 				score /= 2;
-				System.out.println("LIVES: " + lives);
 				explosions.add(new Explosion(x, y, "playerExplosion"));
 			}
 		}
@@ -1586,7 +1579,6 @@ public class GameScreen implements Screen{
 				--lives;
 				if(score > 100)
 				score /= 2;
-				System.out.println("LIVES: " + lives);
 				explosions.add(new Explosion(x, y, "playerExplosion"));
 			}
 		}
@@ -1602,7 +1594,6 @@ public class GameScreen implements Screen{
 				--lives;
 				if(score > 100)
 				score /= 2;
-				System.out.println("LIVES: " + lives);
 				explosions.add(new Explosion(x, y, "playerExplosion"));
 				shootingEnemy.setCollides(true);
 			}

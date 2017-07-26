@@ -150,7 +150,6 @@ public class ShootingEnemy{
 			}
 		}
 		
-		//System.out.println("IS FREEZED : " + isFreezed);
 		
 		//if it is freezed
 		if(isFreezed){

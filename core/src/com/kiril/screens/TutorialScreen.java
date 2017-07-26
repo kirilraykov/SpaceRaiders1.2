@@ -237,7 +237,6 @@ public class TutorialScreen implements Screen {
 		//reversing the getY 
 		float touchY = MainGame.HEIGHT - game.cam.getInputInGameWorld().y;
 		
-		//System.out.println("X      |      Y:" + touchX + "     |     " + touchY);
 		
 		if(page == 1){
 		//notifications
@@ -507,11 +506,9 @@ public class TutorialScreen implements Screen {
 	
 	public void buttonClickTimer(float delta){
 		if(startButtonClickTimer){
-			//System.out.println("TIMER STARTED");
 			buttonClickTime += delta;
 			
 			if(buttonClickTime >= buttonClickTimer){
-				//System.out.println("CAN CLICK");
 				buttonClickTime = 0;
 				startButtonClickTimer = false;
 				canClick = true;

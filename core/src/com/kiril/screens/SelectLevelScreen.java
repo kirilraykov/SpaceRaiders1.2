@@ -450,8 +450,7 @@ public class SelectLevelScreen implements Screen{
 				}
 			}
 			
-			
-			System.out.println("LEVEL: " + level);
+		
 		}
 		
 		//check for the highlevel, so the page is correct
@@ -1836,7 +1835,6 @@ public class SelectLevelScreen implements Screen{
 							confirmButton.play(0.6f); 
 							canClick = false;
 							startButtonClickTimer = true;
-							System.out.println("page 1");
 						}
 						if(page == 3){
 							page = 2;
@@ -1844,7 +1842,6 @@ public class SelectLevelScreen implements Screen{
 							confirmButton.play(0.6f); 
 							canClick = false;
 							startButtonClickTimer = true;
-							System.out.println("page 2");
 						}
 						
 					}
@@ -1859,7 +1856,6 @@ public class SelectLevelScreen implements Screen{
 						confirmButton.play(0.6f); 
 						canClick = false;
 						startButtonClickTimer = true;
-						System.out.println("page 2");
 						page = 2;
 					}
 					if(Gdx.input.justTouched() && page == 2 && canClick){
@@ -1867,7 +1863,6 @@ public class SelectLevelScreen implements Screen{
 						confirmButton.play(0.6f); 
 						canClick = false;
 						startButtonClickTimer = true;
-						System.out.println("page 3");
 						page = 3;
 					}
 				}else{

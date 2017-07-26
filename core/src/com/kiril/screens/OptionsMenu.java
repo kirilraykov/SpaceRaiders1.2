@@ -238,6 +238,8 @@ public class OptionsMenu implements Screen{
 	public void dispose() {
 		background.dispose();
 		confirmButton.dispose();
+		
+		System.out.println("Options Menu Disposed.");
 	}
 
 }
